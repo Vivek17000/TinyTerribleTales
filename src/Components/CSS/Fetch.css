@@ -1,0 +1,71 @@
+.content{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: MoveX 2s ease-in-out;  
+}
+
+.footer{
+  margin-top:5vh;
+  padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.glow {
+    margin-top: 1.5rem;  
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #FF6C00, 0 0 60px #FF6C00, 0 0 70px #FF6C00, 0 0 80px #FF6C00;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  .button {
+    height:3rem;
+    width:14rem;
+    background-color: #9933cc;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px #9933cc;
+    animation: MoveX 4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .button:hover{
+    transform : scale(1.3);
+    }
+  
+   .button:active {
+    box-shadow: 0 0 5px 2px #9933cc;
+    transform: scale(0.9);
+  }
+
+  .button:hover span {
+    display:none
+  }
+  
+  .button:hover:before {
+    content:"Download CSV";
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00b7ff, 0 0 50px #006eff, 0 0 60px #0066ff, 0 0 70px #3c00ff;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #FF6C00, 0 0 60px #FF6C00, 0 0 70px #FF6C00, 0 0 80px #FF6C00;
+    }
+  }
+
+  
+  span{
+    color: pink !important;
+    font-size: 20px; 
+  }
